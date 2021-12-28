@@ -1,0 +1,307 @@
+* {
+	margin: 0px;
+	color: black;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+/*VISTA DESKTOP*/
+
+@media only screen and (min-width: 1024px) {
+	.gridContenedorPadre{
+		display: grid;
+		grid-template-areas:
+		"header"
+		"main"
+		"footer";
+		grid-template-rows: 17% auto 15%;
+		grid-template-columns: auto;
+	}
+
+	header {
+		grid-area: header;
+	}
+
+	main {
+		grid-area: main;
+	}
+
+	footer {
+		grid-area: footer;
+	}
+
+	.border {
+		border: 3px solid white;
+	}
+
+	/*INICIO ENCABEZADO*/
+
+	.encabezado {
+		display: flex;
+		justify-content: center;
+		background-image: linear-gradient(to left, lightgrey, ghostwhite);	
+	}
+
+	.encabezado__logo {
+		display: flex;
+		width: 150px;
+		transition: 0.5s;
+		padding-top: 20px;
+		padding-left: 150px;
+	}
+	.encabezado__logo:hover {
+		width: 160px;
+	}
+
+	.encabezado__menu {
+		display: flex;
+		flex-direction: row;
+		width: 1000px;
+		height: 150px;
+		align-items: flex-end;
+	}
+
+	nav ul li {
+		padding: 20px;
+	}
+
+/*FIN ENCABEZADO*/
+
+/*INICIO MAIN GENERAL*/
+
+		
+	.main {
+		background-image: url(../assets/img/fondoimg.jpg);
+		background-size: cover;
+		height: 600px;
+	}	
+
+	.texto__inicio {
+		font-size: 60px;
+		transition: 1s;
+		text-align: center;
+		padding-top: 100px;
+		margin: 100px;
+	}	
+
+	.texto__inicio:hover{
+		font-size: 75px;
+	}
+
+	.titulos_paginas {
+		font-size: 50px;
+		text-align: center;
+		padding-top: 100px;
+		margin-left: 200px;
+		margin-right: 200px;
+	}
+
+	.texto__central {
+		display: flex;
+		flex-direction: column;
+		font-size: 25px;
+		align-items: center;
+		text-align: center;
+		margin-left: 400px;
+		margin-right: 400px;
+
+	}
+
+/* FIN MAIN GENERAL*/
+
+/* INICIO MAIN NUESTROS PRODUCTOS */
+
+	.contenedor__imagenes {
+			padding-top: 50px;
+			text-align: center;
+		}
+
+		.imagenes__productos {
+			width: 180px;
+			padding-left: 50px;
+		}
+/* FIN MAIN NUESTROS PRODUCTOS */
+
+/* INICIO MAIN CONTACTO */
+
+	.formulario{
+		text-align: center;
+	}
+
+/* FIN MAIN CONTACTO */
+
+/*INICIO FOOTER*/
+
+	.footer {
+		display: flex;
+		justify-content: center;
+		padding-top: 20px;
+		background-image: linear-gradient(to left,lightgrey, ghostwhite);
+	}
+
+	.footer__logo {
+		width: 50px;
+	}
+
+	.footer__menu {
+		font-size: 10px;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		height: 50px;
+	}
+	
+/*FIN FOOTER*/
+
+}	
+
+/* uso de mediaquerie */
+
+/* VISTA MOBILE */
+
+@media only screen and (min-width: 0px) and (max-width: 768px){
+	.gridContenedorPadre{
+		display: grid;
+		grid-template-areas:
+		"encabezado"
+		"main"
+		"footer";
+		grid-template-rows: 15% auto 8%;
+		grid-template-columns: 100%;
+	}
+
+	.encabezado {
+		grid-area: encabezado;
+	}
+
+	.main {
+		grid-area: main;
+	}
+
+	.footer {
+		grid-area: footer;
+	}
+
+	.border {
+		border: 3px solid white;
+	}
+
+/*INICIO ENCABEZADO*/
+
+	.encabezado {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: ghostwhite;
+	}
+
+	.encabezado__logo {
+		width: 180px;
+	}
+
+	.encabezado__menu {
+		display: flex;
+		flex-direction: row;
+		font-size: 12px;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 10px;
+	}
+
+	nav ul li {
+		padding: 10px;
+	
+	}
+
+/*FIN ENCABEZADO*/
+
+/*INICIO MAIN GENERAL*/
+
+	.main {
+		background-image: url(../assets/img/fondoimg.jpg);
+		background-size: cover;
+		height: 1450px;
+	}	
+
+	.texto__inicio {
+		font-size: 60px;
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+		padding-top: 50px;
+		margin: 50px;
+	}
+
+	.titulos_paginas {
+		font-size: 20x;
+		text-align: center;
+		flex-wrap: wrap;
+		margin: 20px;
+	}
+
+	.texto__central {
+		display: flex;
+		flex-direction: column;
+		font-size: 30px;
+		align-items: center;
+		text-align: center;
+		margin: 30px;
+	}
+
+/* FIN MAIN GENERAL*/
+
+/* INICIO MAIN NUESTROS PRODUCTOS */
+
+	.contenedor__imagenes {
+		padding-top: 5px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.imagenes__productos {
+		width: 275px;
+		padding-top: 15px;
+	}
+
+/* FIN MAIN NUESTROS PRODUCTOS */
+
+/* INICIO MAIN CONTACTO */
+
+	.formulario{
+		text-align: center;
+	}
+
+/* FIN MAIN CONTACTO */
+
+/*INICIO FOOTER*/
+
+	.footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: ghostwhite;
+	}
+
+	.footer__logo {
+		width: 50px;
+	}
+
+	.footer__menu {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 10px;
+		justify-content: center;		
+	}
+
+/*FIN FOOTER*/
+
+}
+
+
+
