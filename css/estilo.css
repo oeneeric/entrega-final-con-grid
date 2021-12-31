@@ -70,7 +70,6 @@
 
 /*INICIO MAIN GENERAL*/
 
-		
 	.main {
 		background-image: url(../assets/img/fondoimg.jpg);
 		background-size: cover;
@@ -109,6 +108,14 @@
 	}
 
 /* FIN MAIN GENERAL*/
+
+/* INICIO MAIN INDEX */
+
+	.fondo__bebe{
+		width: 1577px;
+	}
+
+/* FIN MAIN INDEX */
 
 /* INICIO MAIN NUESTROS PRODUCTOS */
 
@@ -167,7 +174,7 @@
 		"encabezado"
 		"main"
 		"footer";
-		grid-template-rows: 15% auto 8%;
+		grid-template-rows: 15% auto 10%;
 		grid-template-columns: 100%;
 	}
 
@@ -222,7 +229,7 @@
 	.main {
 		background-image: url(../assets/img/fondoimg.jpg);
 		background-size: cover;
-		height: 1450px;
+		height: 1320px;
 	}	
 
 	.texto__inicio {
@@ -252,6 +259,24 @@
 	}
 
 /* FIN MAIN GENERAL*/
+
+/* INICIO MAIN INDEX */
+
+	.fondo__bebe{
+		width: 400px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.contenedorbebe{
+
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		background-size: cover;
+	}
+
+/* FIN MAIN INDEX */
 
 /* INICIO MAIN NUESTROS PRODUCTOS */
 
